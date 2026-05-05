@@ -49,14 +49,24 @@ nav a:hover { color: var(--petal-accent); }
 
 /* PORTFOLIO GRID */
 .gallery {
-    .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* auto-fit helps things center */
+    /* This tells the computer: 'Make columns at most 350px, but don't stretch them to fill everything' */
+    grid-template-columns: repeat(auto-fit, 350px); 
     gap: 40px;
-    padding: 20px;
-    max-width: 1000px; /* Limits width so two cards sit nicely side-by-side */
-    margin: 0 auto;    /* Centers the whole grid */
-    justify-content: center; /* Ensures content stays centered */
+    padding: 40px 20px;
+    /* This centers the two boxes on the page */
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.photo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    aspect-ratio: 1 / 1; /* Keeps them as perfect squares */
+    background-color: transparent; 
+}
 }
 }
 
