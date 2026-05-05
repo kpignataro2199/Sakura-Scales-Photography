@@ -56,7 +56,10 @@
         <p>&copy; 2026 Sakura Scales Photography</p>
     </footer>
 <script>
-  new LuminousGallery(document.querySelectorAll(".gallery-link"));
+  // This looks for all your links and groups them into a scrollable gallery
+  new LuminousGallery(document.querySelectorAll(".gallery-link"), {
+    arrowNavigation: true // This enables the left/right arrow keys on a keyboard
+  });
 </script>
 </body>
 </html>
