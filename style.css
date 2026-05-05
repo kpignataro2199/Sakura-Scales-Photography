@@ -50,16 +50,11 @@ nav a:hover { color: var(--petal-accent); }
 /* PORTFOLIO GRID */
 .gallery {
     display: grid;
-    /* This tells the computer: 'Make columns at most 350px, but don't stretch them to fill everything' */
-    grid-template-columns: repeat(auto-fit, 350px); 
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
     gap: 40px;
-    padding: 40px 20px;
-    /* This centers the two boxes on the page */
-    justify-content: center; 
+    padding: 60px 20px;
     margin: 0 auto;
-    max-width: 1200px;
 }
-
 .photo-card {
     position: relative;
     overflow: hidden;
