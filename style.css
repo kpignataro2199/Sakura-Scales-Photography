@@ -88,31 +88,85 @@ nav a:hover {
 }
 
 .overlay {
+    .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 30px;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.9), transparent);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.photo-card:hover .overlay {
-    opacity: 1;
+    
+    /* A soft, semi-transparent Sakura pink background */
+    background: rgba(253, 242, 245, 0.85); 
+    backdrop-filter: blur(5px); /* Modern frosted glass look */
+    
+    padding: 15px;
+    text-align: center;
+    
+    /* This makes it visible all the time */
+    opacity: 1; 
+    
+    border-top: 1px solid rgba(240, 98, 146, 0.2);
 }
 
 .overlay h3 {
     margin: 0;
-    color: var(--petal-accent);
-    font-size: 1.1rem;
-    font-weight: 400;
+    color: #f06292; /* The Petal Pink color */
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .overlay p {
-    margin: 5px 0 0;
-    font-size: 0.75rem;
+    .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    /* A soft, semi-transparent Sakura pink background */
+    background: rgba(253, 242, 245, 0.85); 
+    backdrop-filter: blur(5px); /* Modern frosted glass look */
+    
+    padding: 15px;
+    text-align: center;
+    
+    /* This makes it visible all the time */
+    opacity: 1; 
+    
+    border-top: 1px solid rgba(240, 98, 146, 0.2);
+}
+
+.overlay h3 {
+    .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    /* A soft, semi-transparent Sakura pink background */
+    background: rgba(253, 242, 245, 0.85); 
+    backdrop-filter: blur(5px); /* Modern frosted glass look */
+    
+    padding: 15px;
+    text-align: center;
+    
+    /* This makes it visible all the time */
+    opacity: 1; 
+    
+    border-top: 1px solid rgba(240, 98, 146, 0.2);
+}
+
+.overlay h3 {
+    margin: 0;
+    color: #f06292; /* The Petal Pink color */
+    font-size: 1rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.overlay p {
+    margin: 3px 0 0;
+    font-size: 0.7rem;
+    color: #555;
     letter-spacing: 1px;
 }
 
