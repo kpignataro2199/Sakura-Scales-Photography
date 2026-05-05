@@ -49,12 +49,15 @@ nav a:hover { color: var(--petal-accent); }
 
 /* PORTFOLIO GRID */
 .gallery {
+    .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* auto-fit helps things center */
     gap: 40px;
-    padding: 60px 20px;
-    max-width: 1300px;
-    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px; /* Limits width so two cards sit nicely side-by-side */
+    margin: 0 auto;    /* Centers the whole grid */
+    justify-content: center; /* Ensures content stays centered */
+}
 }
 
 .gallery a {
@@ -65,7 +68,7 @@ nav a:hover { color: var(--petal-accent); }
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    background-color: var(--sakura-pink);
+    background-color: transparent;
     transition: transform 0.4s ease;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     aspect-ratio: 1 / 1; /* Makes boxes square */
