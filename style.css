@@ -124,3 +124,18 @@ footer {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
+/* Ensure the links don't have underlines */
+.gallery a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Make the overlay look like a professional title card */
+.overlay {
+    background: rgba(253, 242, 245, 0.95); /* Your Sakura Pink */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
