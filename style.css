@@ -120,3 +120,8 @@ footer {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
+/* Special rule for the Portfolio pages to prevent cropping */
+.full-view .photo-card img {
+    object-fit: contain; 
+    background-color: #fff; /* Or var(--sakura-pink) if you prefer */
+}
