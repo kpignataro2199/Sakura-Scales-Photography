@@ -1,13 +1,13 @@
 /* SAKURA PALETTE & VARIABLES */
 :root {
-    --sakura-pink: #fdf2f5;    /* Very soft cherry blossom pink */
-    --petal-accent: #f06292;   /* Deep pink for highlights */
-    --text-color: #333333;     /* Dark grey for readability */
+    --sakura-pink: #fdf2f5;
+    --petal-accent: #f06292;
+    --text-color: #333333;
     --bg-white: #ffffff;
 }
 
 body {
-    font-family: 'Optima', 'Didot', 'Georgia', serif; /* Editorial, elegant typography */
+    font-family: 'Optima', 'Didot', 'Georgia', serif;
     background-color: var(--bg-white);
     margin: 0;
     color: var(--text-color);
@@ -33,9 +33,7 @@ header h1 {
     color: var(--petal-accent);
 }
 
-nav {
-    margin-top: 20px;
-}
+nav { margin-top: 20px; }
 
 nav a {
     text-decoration: none;
@@ -47,9 +45,7 @@ nav a {
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: var(--petal-accent);
-}
+nav a:hover { color: var(--petal-accent); }
 
 /* PORTFOLIO GRID */
 .gallery {
@@ -61,103 +57,49 @@ nav a:hover {
     margin: 0 auto;
 }
 
+.gallery a {
+    text-decoration: none;
+}
+
 .photo-card {
     position: relative;
     overflow: hidden;
-    border-radius: 12px; /* Softened edges */
-    background-color: var(--sakura-pink); /* Placeholder color while loading */
+    border-radius: 12px;
+    background-color: var(--sakura-pink);
     transition: transform 0.4s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Subtle depth */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    aspect-ratio: 1 / 1; /* Makes boxes square */
 }
 
 .photo-card img {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover; /* Ensures no stretching/distortion */
+    object-fit: cover; /* No distortion */
     transition: transform 0.6s ease;
 }
 
-/* Hover Effects */
-.photo-card:hover {
-    transform: translateY(-5px);
-}
+.photo-card:hover { transform: translateY(-5px); }
 
-.photo-card:hover img {
-    transform: scale(1.03); /* Subtle zoom without changing color */
-}
+.photo-card:hover img { transform: scale(1.03); }
 
+/* PERMANENT TITLE BAR */
 .overlay {
-    .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    
-    /* A soft, semi-transparent Sakura pink background */
-    background: rgba(253, 242, 245, 0.85); 
-    backdrop-filter: blur(5px); /* Modern frosted glass look */
-    
+    background: rgba(253, 242, 245, 0.9); /* Frosted Sakura Pink */
+    backdrop-filter: blur(5px);
     padding: 15px;
     text-align: center;
-    
-    /* This makes it visible all the time */
-    opacity: 1; 
-    
     border-top: 1px solid rgba(240, 98, 146, 0.2);
+    opacity: 1; /* Keep visible at all times */
 }
 
 .overlay h3 {
     margin: 0;
-    color: #f06292; /* The Petal Pink color */
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.overlay p {
-    .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    /* A soft, semi-transparent Sakura pink background */
-    background: rgba(253, 242, 245, 0.85); 
-    backdrop-filter: blur(5px); /* Modern frosted glass look */
-    
-    padding: 15px;
-    text-align: center;
-    
-    /* This makes it visible all the time */
-    opacity: 1; 
-    
-    border-top: 1px solid rgba(240, 98, 146, 0.2);
-}
-
-.overlay h3 {
-    .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    /* A soft, semi-transparent Sakura pink background */
-    background: rgba(253, 242, 245, 0.85); 
-    backdrop-filter: blur(5px); /* Modern frosted glass look */
-    
-    padding: 15px;
-    text-align: center;
-    
-    /* This makes it visible all the time */
-    opacity: 1; 
-    
-    border-top: 1px solid rgba(240, 98, 146, 0.2);
-}
-
-.overlay h3 {
-    margin: 0;
-    color: #f06292; /* The Petal Pink color */
+    color: var(--petal-accent);
     font-size: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -177,19 +119,4 @@ footer {
     color: #999;
     font-size: 0.8rem;
     letter-spacing: 1px;
-}
-/* Ensure the links don't have underlines */
-.gallery a {
-    text-decoration: none;
-    display: block;
-}
-
-/* Make the overlay look like a professional title card */
-.overlay {
-    background: rgba(253, 242, 245, 0.95); /* Your Sakura Pink */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
