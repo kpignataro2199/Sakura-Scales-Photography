@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portraits | Sakura Scales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/Luminous.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sakura Scales</h1>
+        <nav>
+            <a href="index.html">Portfolio</a>
+            <a href="about.html">The Artist</a>
+            <a href="https://facebook.com/yourlink" target="_blank">Facebook</a>
+            <a href="https://instagram.com/yourlink" target="_blank">Instagram</a>
+        </nav>
+    </header>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding: 10px 20px;">
+        
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h2 style="color: #f06292; font-weight: 300; letter-spacing: 3px; text-transform: uppercase;">Portraits</h2>
+            <p style="font-style: italic; color: #888; max-width: 600px; margin: 20px auto;">
+                Capturing the quiet stories and expressions of the people behind the lens.
+            </p>
+        </div>
+
+        <section class="gallery full-view">
+            
+            <div class="photo-card">
+                <a href="images/portrait1.jpg" class="gallery-link">
+                    <img src="images/portrait1.jpg" alt="Portrait Name">
+                </a>
+                <div class="overlay">
+                    <h3>Portrait Title</h3>
+                </div>
+            </div>
+
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sakura Scales Photography</p>
+    </footer>
+
+    <script>
+      new LuminousGallery(document.querySelectorAll(".gallery-link"), {
+        arrowNavigation: true
+      }, {
+        caption: function(trigger) {
+          return trigger.closest('.photo-card').querySelector('h3').innerText;
+        }
+      });
+    </script>
+
+</body>
+</html>
