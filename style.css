@@ -133,3 +133,33 @@ footer {
     object-fit: contain; 
     border-radius: 12px; /* This rounds the actual photo edges */
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.08)); /* Adds a soft shadow to the photo itself */
+/* --- THE MOBILE FIX (Replaces your old media query) --- */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stacks "SAKURA SCALES" above the links */
+        padding: 20px 10px;
+        text-align: center;
+        height: auto;           /* Ensures the bar grows to fit the stacked text */
+    }
+
+    header h1 {
+        font-size: 1.4rem;      /* Keeps the name on one single line */
+        white-space: nowrap;    /* Prevents the name from breaking/wrapping */
+        margin-bottom: 15px;    /* Adds space so the links aren't touching the name */
+        letter-spacing: 4px;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;              /* Perfect spacing for 4 links */
+        flex-wrap: wrap;        /* Allows links to drop to a second row if the screen is tiny */
+        width: 100%;
+    }
+
+    nav a {
+        margin: 0;              /* Resets desktop spacing for perfect centering */
+        font-size: 0.75rem;     /* Makes links legible but dainty */
+    }
+}
