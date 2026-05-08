@@ -163,3 +163,23 @@ footer {
         font-size: 0.75rem;     /* Makes links legible but dainty */
     }
 }
+@media (max-width: 600px) {
+    /* ... keep your header fixes from before ... */
+
+    .gallery {
+        /* This is the magic fix for "hugging the right" */
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        
+        padding: 20px 0; /* Clears out extra side padding */
+        margin: 0 auto;  /* Centers the whole container */
+        gap: 30px;       /* Nice vertical space between photos */
+    }
+
+    .photo-card {
+        width: 90%;      /* Gives a little breathing room on the edges */
+        max-width: 350px; /* Prevents them from getting too big on tablets */
+        margin: 0 auto;  /* Ensures each individual card stays centered */
+    }
+}
